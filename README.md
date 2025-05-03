@@ -21,3 +21,13 @@ This is a full stack application built with **Spring Boot** (backend), **ReactJS
 ```bash
 git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
+
+**Specification to connect POSTGRESQL**
+
+spring.datasource.url=jdbc:postgresql://localhost:5432/your_database_name
+spring.datasource.username=your_postgres_username
+spring.datasource.password=your_postgres_password
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
+server.port=8080
+
